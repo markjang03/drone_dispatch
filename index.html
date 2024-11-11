@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Dispatch Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: left;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .card ul {
+            list-style: none;
+        }
+        .card li {
+            margin: 8px 0;
+        }
+        .card a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 1em;
+            transition: color 0.2s;
+        }
+        .card a:hover {
+            color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drone Dispatch Management System</h1>
+    <div class="container">
+        <!-- Add Section -->
+        <div class="card">
+            <h3>Add New</h3>
+            <ul>
+                <li><a href="add_customer.html">Add Customer</a></li>
+                <li><a href="add_drone.html">Add Drone</a></li>
+                <li><a href="add_drone_pilot.html">Add Drone Pilot</a></li>
+                <li><a href="add_product.html">Add Product</a></li>
+                <li><a href="add_store.html">Add Store</a></li>
+            </ul>
+        </div>
+
+        <!-- List Section with Sorting and Filtering -->
+        <div class="card">
+            <h3>List & Manage</h3>
+            <ul>
+                <li><a href="list_customers.php">Customers</a></li>
+                <li><a href="list_drones.php">Drones</a></li>
+                <li><a href="list_drone_pilots.php">Drone Pilots</a></li>
+                <li><a href="list_products.php">Products</a></li>
+                <li><a href="list_stores.php">Stores</a></li>
+            </ul>
+        </div>
+
+        <!-- View Individual Items -->
+        <div class="card">
+            <h3>View Details</h3>
+            <ul>
+                <li><a href="view_customers.php">All Customers</a></li>
+                <li><a href="view_drones.php">All Drones</a></li>
+                <li><a href="view_drone_pilots.php">All Drone Pilots</a></li>
+                <li><a href="view_products.php">All Products</a></li>
+                <li><a href="view_stores.php">All Stores</a></li>
+            </ul>
+        </div>
+
+        <!-- Remove Section -->
+        <div class="card">
+            <h3>Remove Records</h3>
+            <ul>
+                <li><a href="remove_customer.html">Remove Customer</a></li>
+                <li><a href="remove_drone.html">Remove Drone</a></li>
+                <li><a href="remove_drone_pilot.html">Remove Drone Pilot</a></li>
+                <li><a href="remove_product.html">Remove Product</a></li>
+                <li><a href="remove_store.html">Remove Store</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

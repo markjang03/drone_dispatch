@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drone List</title>
+</head>
+<body>
+    <h2>Filter and Sort Drones</h2>
+    <form action="list_drones.php" method="get">
+        <label for="storeID">Store ID:</label>
+        <input type="text" name="storeID" id="storeID">
+
+        <label for="capacity">Capacity:</label>
+        <input type="number" name="capacity" id="capacity">
+
+        <label for="sort_by">Sort by:</label>
+        <select name="sort_by" id="sort_by">
+            <option value="storeID">Store ID</option>
+            <option value="droneTag">Drone Tag</option>
+            <option value="capacity">Capacity</option>
+            <option value="remaining_trips">Remaining Trips</option>
+        </select>
+
+        <label for="order">Order:</label>
+        <select name="order" id="order">
+            <option value="ASC">Ascending</option>
+            <option value="DESC">Descending</option>
+        </select>
+
+        <button type="submit">Filter and Sort</button>
+    </form>
+</body>
+</html>

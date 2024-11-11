@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer List</title>
+</head>
+<body>
+    <h2>Filter and Sort Customers</h2>
+    <form action="list_customers.php" method="get">
+        <label for="uname">Username:</label>
+        <input type="text" name="uname" id="uname">
+
+        <label for="rating">Rating:</label>
+        <input type="number" name="rating" id="rating" min="1" max="5">
+
+        <label for="sort_by">Sort by:</label>
+        <select name="sort_by" id="sort_by">
+            <option value="uname">Username</option>
+            <option value="rating">Rating</option>
+            <option value="credit">Credit</option>
+        </select>
+
+        <label for="order">Order:</label>
+        <select name="order" id="order">
+            <option value="ASC">Ascending</option>
+            <option value="DESC">Descending</option>
+        </select>
+
+        <button type="submit">Filter and Sort</button>
+    </form>
+</body>
+</html>

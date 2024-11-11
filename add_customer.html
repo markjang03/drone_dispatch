@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Customer</title>
+</head>
+<body>
+    <h1>Add Customer</h1>
+    <form action="add_customer.php" method="post">
+        Username: <input type="text" name="uname" required><br>
+        First Name: <input type="text" name="first_name" required><br>
+        Last Name: <input type="text" name="last_name" required><br>
+        Address: <input type="text" name="address" required><br>
+        Birthdate: <input type="date" name="birthdate"><br>
+        Rating: <input type="number" name="rating" min="1" max="5" required><br>
+        Credit: <input type="number" name="credit" min="0" required><br>
+        <input type="submit" value="Add Customer">
+    </form>
+</body>
+</html>
